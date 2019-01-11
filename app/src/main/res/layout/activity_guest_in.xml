@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/show3"
+                android:layout_width="125dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:text="Guest Name : "
+                android:textColor="#000000"
+                android:paddingBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/textViewName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/show3"
+                android:paddingLeft="5dp"
+                android:text="Jack Chang"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/show"
+                android:layout_width="125dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show3"
+                android:text="Guest IC : "
+                android:textColor="#000000"
+                android:paddingBottom="3dp"/>
+                />
+            <TextView
+                android:id="@+id/show2"
+                android:layout_width="125dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show1"
+                android:text="CheckIN Time : "
+                android:textColor="#000000"
+                android:paddingBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/textViewIC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewName2"
+                android:layout_toRightOf="@id/show2"
+                android:paddingLeft="5dp"
+                android:text="981119055035"
+                android:textColor="#000000"
+                android:paddingBottom="3dp"
+                />
+
+            <TextView
+                android:id="@+id/checkINtime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPlate2"
+                android:layout_toRightOf="@id/show2"
+                android:paddingLeft="5dp"
+                android:text="01/01/2019 10:46 PM"
+                android:textColor="#000000"
+                android:paddingBottom="3dp"
+                />
+            <TextView
+                android:id="@+id/show5"
+                android:layout_width="125dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show2"
+                android:text="Handle By : "
+                android:textColor="#000000"
+                android:paddingBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/textViewGuard2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkINtime2"
+                android:layout_toRightOf="@id/show5"
+                android:paddingLeft="5dp"
+                android:paddingBottom="3dp"
+                android:text="security1"
+                android:textColor="#000000" />
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/show1"
+                android:layout_below="@id/show"
+                android:text="Car Plate : "
+                android:textColor="#000000"
+                android:gravity="right"
+                android:paddingBottom="3dp"/>
+            <TextView
+                android:id="@+id/textViewPlate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewIC2"
+                android:layout_toRightOf="@id/show5"
+                android:paddingLeft="5dp"
+                android:text="ABC1234"
+                android:textColor="#000000"
+                android:paddingBottom="3dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jack.security">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GuardInterface"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ContractorRegister"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:label="Contractor Register"/>
+        <activity android:name=".INrecords"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="Check IN Records"/>
+        <activity android:name=".ContractorRecords"
+            android:parentActivityName=".INrecords"
+            android:screenOrientation="portrait"
+            android:label="Contractor Records"/>
+        <activity android:name=".DutyReport"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="Duty Report"/>
+        <activity android:name=".SecurityVerify"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="Guest Verify"/>
+        <activity android:name=".GuestINRecords"
+            android:parentActivityName=".INrecords"
+            android:screenOrientation="portrait"
+            android:label="Guest Records"/>
+        <activity android:name=".EventVerify"
+            android:parentActivityName=".VerifyClass"
+            android:screenOrientation="portrait"
+            android:label="Event Verify">
+        </activity>
+        <activity android:name=".VerifyClass"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="Verification"/>
+    </application>
+
+</manifest>
